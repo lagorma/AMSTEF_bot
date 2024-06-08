@@ -1,0 +1,295 @@
+/root/projects/AMSTEF_bot/other/mood_graph.py:56: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+/root/projects/AMSTEF_bot/other/mood_graph.py:9: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  plt.figure()
+Run time of job "send_daily_mood_test (trigger: cron[hour='5', minute='0'], next run at: 2024-06-02 05:00:00 UTC)" was missed by 0:00:01.687953
+Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6861940379)
+Cause exception while process update id=585629061 by bot id=6861940379
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/projects/AMSTEF_bot/app/handlers.py", line 405, in main_screen
+    await callback.answer(" ")
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 508, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Cause exception while process update id=585629063 by bot id=6861940379
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/projects/AMSTEF_bot/app/handlers.py", line 405, in main_screen
+    await callback.answer(" ")
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 508, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Cause exception while process update id=585629060 by bot id=6861940379
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/projects/AMSTEF_bot/app/handlers.py", line 405, in main_screen
+    await callback.answer(" ")
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 508, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Cause exception while process update id=585629062 by bot id=6861940379
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/projects/AMSTEF_bot/app/handlers.py", line 405, in main_screen
+    await callback.answer(" ")
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 508, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Cause exception while process update id=585629059 by bot id=6861940379
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/projects/AMSTEF_bot/app/handlers.py", line 405, in main_screen
+    await callback.answer(" ")
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 508, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Cause exception while process update id=585629058 by bot id=6861940379
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/projects/AMSTEF_bot/app/handlers.py", line 405, in main_screen
+    await callback.answer(" ")
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 508, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
